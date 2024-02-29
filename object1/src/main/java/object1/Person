@@ -1,0 +1,11 @@
+public class Main {
+  public static void main(String[] args){
+
+    //Declare and initialize an object
+    Person person1 = new Person ("John", 30);
+    //Now you can use the object 'person'
+    Person person2 = new Person ("Beth", 30, 155);
+
+    System.out.println("age is " + person2.age);
+  }
+}

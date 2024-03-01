@@ -1,3 +1,4 @@
+package main.java.object1;
 
 public class Main {
     //Error Missing package statement: 'main.java.object1' Couldn't figure out how to fix this
@@ -15,89 +16,19 @@ public class Main {
     }
 }
 
-public static class Chair {
-    private String material;
-    private String color;
-    private int legs;
-
-    public Chair (String material, String color, int legs){
-        this.material = material;
-        this.color = color;
-        this.legs = legs;
+class Person {
+    // Define Instance Variables
+    // different for each object!
+    String name;
+    int age = 0;
+    int height = 0;
+    // height in cm
+    // Constructor
+    public Person(String name, int age, int height) {
+        this.name = name;
+        this.age = age;
+        this.height = height;
     }
-    public String getMaterial(){
-        return material;
-    }
-    public void setMaterial(String material){
-        this.material = material;
-    }
-    public String getColor(){
-        return color;
-    }
-    public void setColor(String color){
-    }
-    public int getLegs(){
-        return legs;
-    }
-    public void setLegs(int legs){
-        this.legs = legs;
-    }
-}
 
-public static class Dog {
-    private String name;
-    private int age;
-    private String breed;
-    private String color;
 
-public Dog(String name, int age, String breed, String color) {
-    this.name = name;
-    this.age = age;
-    this.breed = breed;
-    this.color = color;
-}
-
-public String getName() {
-    return name;
-}
-
-public void setName(String name) {
-    this.name = name;
-}
-
-public int getAge() {
-    return age;
-}
-
-public void setAge(int age) {
-    this.age = age;
-}
-
-public String getBreed() {
-    return breed;
-}
-
-public void setBreed(String breed) {
-    this.breed = breed;
-}
-public String getColor(){
-    return color;
-}
-public void setColor(String color) {
-    this.color = color;
-}
-}
-
-public class Car {
-    String make;
-    String model;
-    int year;
-    int mileage;
-
-    public Car(String make, String model, int year, int mileage){
-        this.make = make;
-        this.model = model;
-        this.year = year;
-        this.mileage = mileage;
-    }
 }
